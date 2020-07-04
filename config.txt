@@ -1,0 +1,8 @@
+dbDriver=mysql
+dbUser=root
+dbPass=admin
+dbHost=localhost
+dbPort=3306
+dbName=enigma_mart
+serverHost=localhost
+serverPort=8080

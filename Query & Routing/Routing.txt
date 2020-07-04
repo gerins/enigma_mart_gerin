@@ -1,0 +1,54 @@
+http://localhost:8080/products				(GET)		// View All Products availalble
+http://localhost:8080/products/(inputProductID)		(GET)		// View Single Products availalble
+http://localhost:8080/products				(POST)		// Add new Products 
+http://localhost:8080/products/(inputProductID)		(PUT)		// Update availalble Products 
+http://localhost:8080/products/(inputProductID)		(DELETE)	// Delete availalble Products
+
+Format untuk POST dan PUT products
+{
+    "catid": "1",
+    "productname": "Rinso",
+    "harga":"5000"
+}
+
+
+http://localhost:8080/category				(GET)		// View All Category availalble
+http://localhost:8080/category/(inputcategoryID)	(GET)		// View Single Category availalble
+http://localhost:8080/category				(POST)		// Add new Category
+http://localhost:8080/category/(inputcategoryID)	(PUT)		// Update availalble Category
+http://localhost:8080/category/(inputcategoryID)	(DELETE) 	// Delete availalble Category
+
+Format untuk POST dan PUT category
+{
+    "categoryname": "Bahan Pokok"
+}
+
+
+http://localhost:8080/transaction/daily/(inputDate)	(GET) 		// View report transaction by day
+http://localhost:8080/transaction/montly/(inputMonth)	(GET) 		// View report transaction by Month
+
+http://localhost:8080/transaction			(GET) 		// View All Transaction 
+http://localhost:8080/transaction/(inputTransactionID)	(GET) 		// View single Transaction
+http://localhost:8080/transaction			(POST) 		// Add new Transaction
+http://localhost:8080/transaction/(inputTransactionID)	(PUT) 		// Update Transaction
+http://localhost:8080/transaction/(inputTransactionID)	(DELETE) 	// Delete availalble Transaction
+
+
+Format untuk POST dan PUT Transaction
+{
+    "solditems": [
+        {
+            "productname": "(inputProductID)",
+            "quantity": "5"
+        },
+        {
+            "productname": "(inputProductID)",
+            "quantity": "5"
+        }
+,
+        {
+            "productname": "(inputProductID)",
+            "quantity": "5"
+        }
+    ]
+}
